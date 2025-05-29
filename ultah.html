@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Selamat Ulang Tahun Cinta ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      padding: 30px 20px;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease;
+      text-shadow: 0 2px 6px rgba(255, 77, 109, 0.8);
+    }
+
+    p.intro {
+      font-size: 1.2em;
+      margin: 10px 0 20px 0;
+      max-width: 500px;
+      animation: fadeInUp 1s ease;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+
+    .main-img {
+      width: 220px;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
+      margin: 20px 0;
+      animation: zoomIn 1s ease;
+      border: 4px solid #ff4d6d;
+      image-rendering: auto;
+    }
+
+    .btn {
+      background-color: #fff;
+      color: #ff4d6d;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1em;
+      margin: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      z-index: 10;
+      box-shadow: 0 4px 12px rgba(255, 77, 109, 0.4);
+    }
+
+    .btn:hover {
+      background-color: #ffe0e6;
+    }
+
+    .message {
+      display: none;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: #333;
+      padding: 15px;
+      border-radius: 15px;
+      font-size: 1.1em;
+      max-width: 600px;
+      line-height: 1.6em;
+      margin-top: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      position: relative;
+      animation: fadeIn 1s ease;
+      text-align: center;
+    }
+
+    .message img {
+      width: 100%;
+      max-width: 400px; /* maksimal lebar agar gambar tidak pecah */
+      height: auto;
+      border-radius: 15px;
+      margin-top: 15px;
+      animation: zoomIn 0.8s ease;
+      box-shadow: 0 6px 25px rgba(255, 77, 109, 0.6);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      image-rendering: auto;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Selamat Ulang Tahun, Sayangku 💖</h1>
+  <p class="intro">Hari ini adalah hari yang sangat spesial. Aku punya sesuatu untukmu... ✨</p>
+  <img class="main-img" src="https://i.ibb.co/C5syb39Q/Whats-App-Image-2025-05-29-at-20-20-58.jpg" alt="Foto Romantis Utama">
+
+  <div id="messages"></div>
+  <button id="nextBtn" class="btn">Dibaca ya sayang</button>
+
+  <script>
+    const contents = [
+      {
+        text: "Selamat Ulang Tahun ke 21, sayangku Nurul Jannah ❤️",
+        img: "https://i.ibb.co/bMGLChMx/Whats-App-Image-2025-05-29-at-20-20-59-1.jpg"
+      },
+      {
+        text: "Hari ini, dunia kayaknya jadi sedikit lebih manis karena kamu, si paling bikin deg-degan, lahir 21 tahun yang lalu.",
+        img: "https://i.ibb.co/Kz7TcYF7/Whats-App-Image-2025-05-29-at-20-20-59.jpg"
+      },
+      {
+        text: "Sayang, aku cuma mau bilang aku bersyukur banget bisa kenal kamu. Kamu itu bukan cuma indah di mata, tapi juga hangat di hati. Cara kamu ketawa, cara kamu ngomel-ngomel kecil, bahkan cara kamu diem aja semuanya bikin aku jatuh cinta lagi dan lagi.",
+        img: "https://i.ibb.co/C32FvBwr/Whats-App-Image-2025-05-29-at-20-24-00-1.jpg"
+      },
+      {
+        text: "Kalau diingat-ingat, lucu juga ya awal mula kita kenal. Waktu itu aku cuma anak baru yang nggak tahu arah, sampai akhirnya Pak Jupri random banget bilang, 'Kamu duduk di situ aja ya, sebelah Nurul.' Aku nurut aja, nggak nyangka ternyata itu keputusan kecil yang akhirnya jadi awal dari cerita yang besar, cerita kita.",
+        img: "https://i.ibb.co/DfmdHgWj/Whats-App-Image-2025-05-29-at-20-24-00-2.jpg"
+      },
+      {
+        text: "Sejak duduk sebelahan itu, semuanya berubah. Kamu jadi tempat nyaman aku. Dari yang awalnya cuma basa-basi soal kerjaan sampai akhirnya jadi ngobrol hal-hal yang lebih dalam, dan aku pelan-pelan jatuh hati.",
+        img: "https://i.ibb.co/gbr9wHCv/Whats-App-Image-2025-05-29-at-20-24-00.jpg"
+      },
+      {
+        text: "21 tahun bukan angka kecil, tapi aku tahu ini baru permulaan dari semua hal luar biasa yang bakal kamu capai. Aku bangga banget sama kamu. Dan aku doain semua harapan kamu, satu per satu, bisa terwujud.",
+        img: "https://i.ibb.co/5xn08s0N/Whats-App-Image-2025-05-29-at-20-21-28-1.jpg"
+      },
+      {
+        text: "Aku nggak janji bisa kasih dunia, tapi aku janji buat selalu ada, nemenin kamu, nyebelin kamu, jagain kamu, dan sayangin kamu tiap hari. Karena ulang tahun kamu bukan cuma soal tiup lilin atau potong kue, tapi juga soal nginget lagi betapa berharganya kamu buat aku.",
+        img: "https://i.ibb.co/nMGsHxB8/Whats-App-Image-2025-05-29-at-20-21-28.jpg"
+      },
+      {
+        text: "Selamat ulang tahun, sayang. Terima kasih udah jadi kamu. Tetap jadi cahaya buat sekitarmu, dan jangan lupa, kamu juga cahaya buat aku.",
+        img: "https://i.ibb.co/RT0n0MJm/Whats-App-Image-2025-05-29-at-20-21-11.jpg"
+      },
+      {
+        text: "Aku cinta kamu. Hari ini, besok, dan selama-lamanya. 🎂❤️",
+        img: "https://i.ibb.co/W4M301Rr/Whats-App-Image-2025-05-29-at-20-21-12-1.jpg"
+      },
+      {
+        text: "Terima kasih sudah membaca pesan ini sampai akhir. Semoga hari ulang tahunmu penuh kebahagiaan dan cinta yang tiada habisnya.",
+        img: "https://i.ibb.co/LDMxpjpN/Whats-App-Image-2025-05-29-at-20-21-12.jpg"
+      },
+      {
+        text: "Dengan segala cinta dan doa, dari aku untuk kamu. ❤️",
+        img: "https://i.ibb.co/C5syb39Q/Whats-App-Image-2025-05-29-at-20-20-58.jpg"
+      }
+    ];
+
+    const messagesDiv = document.getElementById('messages');
+    const nextBtn = document.getElementById('nextBtn');
+    let index = 0;
+
+    nextBtn.addEventListener('click', () => {
+      if (index < contents.length) {
+        // Buat elemen pesan baru
+        const messageEl = document.createElement('div');
+        messageEl.classList.add('message');
+
+        // Isi pesan dan gambar
+        messageEl.innerHTML = `
+          <p>${contents[index].text}</p>
+          <img src="${contents[index].img}" alt="Foto Pesan ${index + 1}">
+        `;
+
+        messagesDiv.appendChild(messageEl);
+        messageEl.style.display = 'block';
+
+        index++;
+        if (index === contents.length) {
+          nextBtn.textContent = 'The End';
+          nextBtn.disabled = true;
+          nextBtn.style.cursor = 'default';
+        } else {
+          nextBtn.textContent = `Next (${index + 1})`;
+        }
+
+        // Scroll otomatis ke pesan terbaru
+        messageEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  </script>
+</body>
+</html>
